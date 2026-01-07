@@ -1,242 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
-   
+
+
 </head>
-<body>
-    <header class="w-full bg-white text-black px-4 py-6 md:py-2 mt-6">
-        <div class="flex justify-between">
 
-            <div class="font-bold ml-25 text-xl">Jadoo</div>
-            <label for="menu-toggl" class="md:hidden cursor-pointer text-2xl ml-35">&#9776;</label>
+<body class="min-h-screen">
 
-            <ul class="hidden peer-checked:flex flex-col space-y-4 mt-4 md:hidden text-gray-700">
-            <li><a href="Destinations">Destinations</a></li>
-            <li><a href="Hotels">Hotels</a></li>
-            <li><a href="Flights">Flights</a></li>
-            <li><a href="Bookings">Bookings</a></li>
-            <li><a href="login">login</a></li>
-            <li><button class="bg-white md-6 border border-black px-3 py-1 rounded-sm">sign up</button></li>
-            <li><button>EN</button></li>
+    <header class="w-full bg-white text-black px-4 md:px-16 py-3">
+        <div class="flex items-center justify-between">
+
+
+            <div class="font-bold text-xl">
+                Jadoo
+            </div>
+
+
+            <button id="menu-btn" class="lg:hidden text-2xl">
+                &#9776;
+            </button>
+
+            <ul class="hidden lg:flex items-center gap-10 text-sm">
+                <li><a href="#destinations" class="hover:text-orange-500">Destinations</a></li>
+                <li><a href="#hotels" class="hover:text-orange-500">Hotels</a></li>
+                <li><a href="#flights" class="hover:text-orange-500">Flights</a></li>
+                <li><a href="#bookings" class="hover:text-orange-500">Bookings</a></li>
+                <li><a href="#login" class="hover:text-orange-500">Login</a></li>
+                <li>
+                    <button class="border border-black px-4 py-1 rounded-md hover:bg-black hover:text-white transition">
+                        Sign up
+                    </button>
+                </li>
+                <li>
+                    <button class="font-semibold">EN</button>
+                </li>
             </ul>
-            <nav >
-            <ul class="md:flex md:gap-15 md:font-sans md:text-sm md:mr-20 hidden">
-            <li><a href="Destinations">Destinations</a></li>
-            <li><a href="Hotels">Hotels</a></li>
-            <li><a href="Flights">Flights</a></li>
-            <li><a href="Bookings">Bookings</a></li>
-            <li><a href="login">login</a></li>
-            <li><button class="bg-white md-6 border border-black px-3 py-1 rounded-sm">sign up</button></li>
-            <li><button>EN</button></li>
-            </ul>
-            </nav>
-        
-    
         </div>
-        </div>
+
 
     </header>
-    
+
+
 
     <main>
-    <section class="grid justify-center md:grid-cols-2">
-        <div class="mt-30 ml-30 justify-center m-2">
-            <h6 class="text-orange-500 font-bold text-sl">BEST DESTINATIONS AROUND THE WORLD</h6>
-            <h2 class="text-6xl/16 font-serif font-bold text-black mt-7">Tavel, enjoy<br>and live a new<br>and full life</h2>
-            <p class="mt-5 text-grey-500">Built wicket longer admire do barton vanity itself do in it.<br>Preferred to sportsmen it engrossed listening. Park gate<br>sell they west the hard for the.</p>
-            <div class="flex h-20 gap-10">
-            <button class="bg-orange-400 mt-5 text-white rounded-sm px-3">Find out more</button>
-            <div class="flex gap-2 mt-2 ">
-            <img src="Play button.jpg" class="mt-4">
-            <button>Play demo</button></div>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-6 md:px-16 py-12">
+
+
+            <div>
+                <h6 class="text-orange-500 font-bold text-sm tracking-wide">
+                    BEST DESTINATIONS AROUND THE WORLD
+                </h6>
+
+                <h2 class="text-3xl sm:text-4xl lg:text-6xl leading-tight font-serif font-bold text-black mt-6">
+                    Travel, enjoy <br>
+                    and live a new <br>
+                    and full life
+                </h2>
+
+                <p class="mt-5 text-gray-500 max-w-lg">
+                    Built wicket longer admire do barton vanity itself do in it.
+                    Preferred to sportsmen it engrossed listening. Park gate sell
+                    they west the hard for the.
+                </p>
+
+
+                <div class="flex flex-col sm:flex-row items-center gap-6 mt-8">
+                    <button
+                        class="bg-orange-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-500 transition">
+                        Find out more
+                    </button>
+
+                    <div class="flex items-center gap-3 cursor-pointer">
+                        <img src="Play button.jpg" class="w-10 h-10" alt="play">
+                        <span class="font-medium">Play Demo</span>
+                    </div>
+                </div>
             </div>
 
 
-        </div>
-        <div>
-            <img src="Traveller1.jpg" class="mt-10 m-2">
-        </div>
-        
-    </section>
-    
-    <section>
-    <p class="text-gray-500 text-center mt-10">CATEGORY</p>
-    <h3 class="text-black font-bold font-serif text-3xl text-center mt-2">We Offer Best Services</h3>
-    <div class="flex justify-center flex-wrap mt-10 gap-20">
-        <div class="bg-white rounded-2xl px-10 py-5 ransition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg m-2">
-            <img src="calculated.jpg" class="mt-10 rounded-sm mx-auto"alt="Image">
-            <h6 class="font-semibold text-base mt-2 text-center ">Calculated Weather</h6>
-            <p class="text-center">Built wicket longer<br>admire do barton<br>vanity itself do in it</p>
-        </div>
-        <div class="bg-white rounded-2xl px-10 ransition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg m-2">
-            <img src="flight.jpg" class="mt-5 rounded-sm mx-auto"alt="Image">
-            <h6 class="font-semibold text-base mt-2 text-center">Best Flights</h6>
-            <p class="text-center">engrossed listening<br>Park gate sell they<br>west the hard for the</p>
-        </div>
-        <div class="bg-white rounded-2xl px-10 ransition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg m-2">
-            <img src="event.jpg" class="mt-10 rounded-sm mx-auto "alt="Image">
-            <h6 class="font-semibold text-base mt-2 text-center">Local Events</h6>
-            <p class="text-center">Barton vanity itself do<br>Preferred to sportsmen it<br>engrossed listening</p>
-        </div>
-        <div class="bg-white rounded-2xl px-10 ransition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg m-2">
-            <img src="customization.jpg" class="mt-10 rounded-sm mx-auto"alt="Image">
-            <h6 class="font-semibold text-base mt-2 text-center">Customization</h6>
-            <p class="text-center">We deliver outsourced<br>aviation services for<br>military customers</p>
-        </div>
-    </div>
-    </section>
-    
-    <section>
-    <p class="text-gray-500 text-center mt-20">TOP SELLING</p>
-    <h6 class="text-black font-bold font-serif text-3xl text-center mt-2">Top Destinations</h6>
-    
-        <div class="flex justify-center flex-wrap mt-10 gap-20">
-            <div class=" bg-white rounded-2xl overflow-hidden shadow-xl/20 m-2">
-                <div>
-                    <img src="Rome.jpg">
+            <div class="flex justify-center">
+                <img src="Traveller1.jpg" class="w-full max-w-md md:max-w-lg" alt="Traveller">
+            </div>
+
+        </section>
+
+        <section>
+            <p class="text-gray-500 text-center mt-10">CATEGORY</p>
+            <h3 class="text-black font-bold font-serif text-3xl text-center mt-2">We Offer Best Services</h3>
+            <div class="flex justify-center flex-wrap mt-10 gap-20">
+                <div
+                    class="bg-white rounded-2xl px-10 py-5 ransition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg m-2">
+                    <img src="calculated.jpg" class="mt-10 rounded-sm mx-auto" alt="Image">
+                    <h6 class="font-semibold text-base mt-2 text-center ">Calculated Weather</h6>
+                    <p class="text-center">Built wicket longer<br>admire do barton<br>vanity itself do in it</p>
                 </div>
-                
-                <div class=" flex gap-15 mt-3">
-                     <p class="text-lg font-semibold text-gray-800 ml-3">Rome, Italy</p>
-                    <p>$5,42k</p>
+                <div
+                    class="bg-white rounded-2xl px-10 ransition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg m-2">
+                    <img src="flight.jpg" class="mt-5 rounded-sm mx-auto" alt="Image">
+                    <h6 class="font-semibold text-base mt-2 text-center">Best Flights</h6>
+                    <p class="text-center">engrossed listening<br>Park gate sell they<br>west the hard for the</p>
                 </div>
-                <div  class="flex gap-3 p-3">
-                    <img src="navigation1.jpg">
-                    <p>12 days trip</p>
-                
+                <div
+                    class="bg-white rounded-2xl px-10 ransition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg m-2">
+                    <img src="event.jpg" class="mt-10 rounded-sm mx-auto " alt="Image">
+                    <h6 class="font-semibold text-base mt-2 text-center">Local Events</h6>
+                    <p class="text-center">Barton vanity itself do<br>Preferred to sportsmen it<br>engrossed listening
+                    </p>
+                </div>
+                <div
+                    class="bg-white rounded-2xl px-10 ransition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg m-2">
+                    <img src="customization.jpg" class="mt-10 rounded-sm mx-auto" alt="Image">
+                    <h6 class="font-semibold text-base mt-2 text-center">Customization</h6>
+                    <p class="text-center">We deliver outsourced<br>aviation services for<br>military customers</p>
                 </div>
             </div>
-            <div class=" bg-white rounded-2xl overflow-hidden shadow-xl/20 m-2">
-                <div>
-                    <img src="UK.jpg">
+        </section>
+
+        <section>
+            <p class="text-gray-500 text-center mt-20">TOP SELLING</p>
+            <h6 class="text-black font-bold font-serif text-3xl text-center mt-2">Top Destinations</h6>
+
+            <div class="flex justify-center flex-wrap mt-10 gap-20">
+                <div class=" bg-white rounded-2xl overflow-hidden shadow-xl/20 m-2">
+                    <div>
+                        <img src="Rome.jpg">
+                    </div>
+
+                    <div class=" flex gap-15 mt-3">
+                        <p class="text-lg font-semibold text-gray-800 ml-3">Rome, Italy</p>
+                        <p>$5,42k</p>
+                    </div>
+                    <div class="flex gap-3 p-3">
+                        <img src="navigation1.jpg">
+                        <p>12 days trip</p>
+
+                    </div>
                 </div>
-                <div  class="flex gap-15 mt-3">
-                    <p class="text-lg font-semibold text-gray-800 ml-3">London, UK</p>
-                    <p>$4.2k</p>
+                <div class=" bg-white rounded-2xl overflow-hidden shadow-xl/20 m-2">
+                    <div>
+                        <img src="UK.jpg">
+                    </div>
+                    <div class="flex gap-15 mt-3">
+                        <p class="text-lg font-semibold text-gray-800 ml-3">London, UK</p>
+                        <p>$4.2k</p>
+                    </div>
+                    <div class=" flex gap-3 p-3">
+                        <img src="navigation1.jpg">
+                        <p>12 days trip</p>
+                    </div>
                 </div>
-                <div class=" flex gap-3 p-3">
-                    <img src="navigation1.jpg">
-                    <p>12 days trip</p>
+
+                <div class=" bg-white rounded-2xl overflow-hidden shadow-xl/20 m-2">
+                    <div>
+                        <img src="Europe.jpg">
+                    </div>
+                    <div class=" flex gap-15 mt-3">
+                        <p class="text-lg font-semibold text-gray-800 ml-3">Full Europe</p>
+                        <p>$15k</p>
+                    </div>
+                    <div class=" flex gap-3 p-3">
+                        <img src="navigation1.jpg">
+                        <p>28 days trip</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class=" bg-white rounded-2xl overflow-hidden shadow-xl/20 m-2">
-                <div>
-                    <img src="Europe.jpg">
-                </div>
-                <div class=" flex gap-15 mt-3">
-                    <p class="text-lg font-semibold text-gray-800 ml-3">Full Europe</p>
-                    <p>$15k</p>
-                </div>
-                <div class=" flex gap-3 p-3">
-                    <img src="navigation1.jpg">
-                    <p>28 days trip</p>
-                </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 px-6 md:px-16 py-12 overflow-hidden">
+
+            <div>
+                <p class="text-gray-500 font-semibold">
+                    Easy and Fast
+                </p>
+
+                <h4 class="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mt-6">
+                    Book Your Next Trip <br class="hidden sm:block"> In 3 Steps
+                </h4>
+
+                <ul class="mt-10 space-y-8">
+
+
+                    <li class="flex items-start gap-6">
+                        <img src="choose.jpg" class="w-12 h-12 rounded-lg" alt="">
+                        <div>
+                            <h6 class="font-bold mb-1">Choose Destination</h6>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Urna, tortor tempus.
+                            </p>
+                        </div>
+                    </li>
+
+
+                    <li class="flex items-start gap-6">
+                        <img src="make.jpg" class="w-12 h-12 rounded-lg" alt="">
+                        <div>
+                            <h6 class="font-bold mb-1">Make Payment</h6>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Urna, tortor tempus.
+                            </p>
+                        </div>
+                    </li>
+
+
+                    <li class="flex items-start gap-6">
+                        <img src="Reach.jpg" class="w-12 h-12 rounded-lg" alt="">
+                        <div>
+                            <h6 class="font-bold mb-1">Reach Airport on Selected Date</h6>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Urna, tortor tempus.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
+
+
+            <div class="flex justify-center md:justify-end">
+                <img src="greece.jpg" class="w-full max-w-md md:max-w-lg rounded-xl" alt="Greece trip">
+            </div>
+
+        </section>
+
+
+        <section class="grid ml-30 overflow-hidden mt-30 md:grid-cols-2">
+            <div>
+                <p class="text-gray-500 font-semibold">TESTIMONIALS</p>
+                <h4 class="font-serif font-bold text-6xl/16 mt-5">What People Say <br>About Us.</h4>
+            </div>
+            <div>
+
+                <div class="bg-white shadow-lg ml-5 p-5 w-100 relative">
+                    <img src="profile.png" class="rounded-full absolute top-0 -left-5">
+                    <p class="text-gray-500 text-sm mt-2 ml-15">"On the Windows talking painted pasture yet its
+                        <br>express parties use. Sure last upon he same as <br>knew next. Of believed or diverted on."
+                    </p>
+                    <h6 class="font-semibold text-sm mt-5 ml-15">Mike taylor</h6>
+                    <p class="text-gray-500 text-sm text-semibold mt-2 ml-15">Lahore, Pakistan</p>
+                </div>
+
+        </section>
+
+        <div class="grid grid-cols-3 ml-30 mt-30 gap-25 overflow-hidden md:grid-cols-5 ">
+            <img src="image1.jpg"
+                class="h-25 w-40 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg">
+            <img src="image2.jpg"
+                class="h-25 w-40 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg">
+            <img src="image 29.jpg"
+                class="h-25 w-40 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg">
+            <img src="image4.jpg"
+                class="h-8 w-28 mt-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg">
+            <img src="image5.jpg"
+                class="h-7 w-25 mt-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg">
         </div>
-    </section>
-    <section class="grid md:gap-30 overflow-hidden md:ml-30 ml-30 mt-30 md:grid-cols-2">
-        <div>
-            <p class="text-gray-500 font-semibold">Easy and Fast</p>
-            <h4 class="font-serif font-bold text-5xl/13 mt-8">Book Your Next Trip In 3 Steps</h4>
-            <ul>
-                <li class="flex gap-10 mt-10"><img src="choose.jpg" class="rounded-lg h-15"><div><h6 class="font-bold">Choose Destination</h6>
-                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Urna, tortor tempus.</p></div></li>
-                
-                <li class="flex gap-10 mt-10"><img src="make.jpg" class="rounded-lg h-15"><div><h6 class="font-bold">Make Payment</h6>
-                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Urna, tortor tempus.</p></div></li>
-            
-                <li class="flex gap-10 mt-10"><img src="Reach.jpg" class="rounded-lg h-15"><div><h6 class="font-bold">Reach Airport on Selected Date</h6>
-                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Urna, tortor tempus.</p></div></li>
-            </ul>
+
+
+        <div class="relative bg-fuchsia-100 mx-4 md:mx-16 my-10 p-6 md:p-12 rounded-tl-[10vw]">
+
+
+            <img src="nav.jpg"
+                class="w-12 h-12 md:w-16 md:h-16 rounded-full absolute -top-4 -right-4 md:-top-6 md:-right-6"
+                alt="icon">
+
+
+            <h3 class="text-xl md:text-3xl lg:text-4xl font-bold text-gray-600 text-center md:px-20">
+                Subscribe to get information, latest news and other interesting offers about Jadoo
+            </h3>
+
+
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <input type="email" placeholder="Your email"
+                    class="w-full px-6 py-4 text-center bg-white rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400">
+
+                <button
+                    class="w-full bg-orange-500 text-white px-6 py-4 rounded-md font-semibold hover:bg-orange-600 transition">
+                    Subscribe
+                </button>
+            </div>
+
         </div>
-        <div class="justify-center overflow-hidden">
-            <img src="greece.jpg">
-        </div>
-    </section>
-    
-    <section class="grid ml-30 overflow-hidden mt-30 md:grid-cols-2">
-        <div>
-            <p class="text-gray-500 font-semibold">TESTIMONIALS</p>
-            <h4 class="font-serif font-bold text-6xl/16 mt-5">What People Say <br>About Us.</h4>
-        </div>
-        <div>
-            
-            <div class="bg-white shadow-lg ml-5 p-5 w-100 relative" >
-                <img src="profile.png" class="rounded-full absolute top-0 -left-5">
-                <p class="text-gray-500 text-sm mt-2 ml-15">"On the Windows talking painted pasture yet its <br>express parties use. Sure last upon he same as <br>knew next. Of believed or diverted on."</p>
-                <h6 class="font-semibold text-sm mt-5 ml-15">Mike taylor</h6>
-                <p class="text-gray-500 text-sm text-semibold mt-2 ml-15">Lahore, Pakistan</p></div>
-        
-    </section>
-    
-    <div class="grid grid-cols-3 ml-30 mt-30 gap-25 overflow-hidden md:grid-cols-5 ">
-        <img src="image1.jpg" class="h-25 w-40 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg">
-        <img src="image2.jpg" class="h-25 w-40 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg">
-        <img src="image 29.jpg" class="h-25 w-40 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg">
-        <img src="image4.jpg" class="h-8 w-28 mt-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg">
-        <img src="image5.jpg" class="h-7 w-25 mt-10 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500 hover:shadow-lg">
-    </div>
-    
-    <div class="bg-fuchsia-100 m-30 p-20 rounded-tl-[10vw] relative">
-        <img src="nav.jpg" class="rounded-full absolute -top-5 -right-5">
-        <h3 class="text-4xl font-bold text-gray-500 text-center px-20">subscribe to get information, latest news and other interesting offers about Jadoo</h3>
-        <div class="grid md:grid-cols-2 gap-10 justify-center">
-            <input type="email" placeholder="Your email" class="text-center px-10 py-5 overflow-hidden mt-10 bg-white rounded-md border border-gray-300">
-            <button class="bg-orange-500 px-6 overflow-hidden justify-center w-50 mt-10 rounded-sm">Subscribe</button>
-        </div>
-    </div>
+
     </main>
-    <footer >
-        <div class="grid grid-cols-3 md:grid-cols-5 ml-30 mr-40  gap-30 mt-30">
-        <div class="ml-5">
-            <h5 class="font-bold text-3xl">Jadoo.</h5>
-            <p class="mt-5 text-sm text-gray-500">Book your trip in minute, get full control for much longer.</p>
-        </div>
-        <div>
-            <h5 class="font-bold text-lg">Company</h5>
-            <ul class="mt-5 text-lg text-gray-500">
-                <li>About</li>
-                <li>Careers</li>
-                <li>Mobile</li>
-            </ul>
-        </div>
-        <div>
-            <h5 class="font-bold text-lg">Contact</h5>
-            <ul class="mt-5 text-lg text-gray-500">
-                <li>Help/FAQ</li>
-                <li>Press</li>
-                <li>Affilates</li>
-            </ul>
-        </div>
-        <div>
-            <h5 class="font-bold text-lg">More</h5>
-            <ul class="mt-5 text-lg text-gray-500">
-                <li>Airlinefees</li>
-                <li>Airline</li>
-                <li>Low fare tips</li>
-            </ul>
-        </div>
-        <div>
-            <div class="flex">
-            <img src="Social.jpg">
-            <img src="Social (1).jpg">
-            <img src="Social (2).jpg"></div>
-            <p class="ml-2 text-lg text-gray-500">Discover our app</p>
-           <div class="flex gap-5 mt-5">
-            <img src="Google Play.jpg">
-            <img src="Play Store.jpg"></div>
 
-        </div></div>
-        
-        <p class="text-center mt-20 text-gray-500 text-xl mb-30">All rights reserved@jadoo.co</p>
+
+    <footer class="bg-white px-6 md:px-16 py-12">
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+
+
+            <div>
+                <h5 class="font-bold text-3xl">Jadoo.</h5>
+                <p class="mt-4 text-sm text-gray-500 max-w-xs">
+                    Book your trip in minute, get full control for much longer.
+                </p>
+            </div>
+
+
+            <div>
+                <h5 class="font-bold text-lg">Company</h5>
+                <ul class="mt-4 space-y-2 text-gray-500">
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Mobile</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h5 class="font-bold text-lg">Contact</h5>
+                <ul class="mt-4 space-y-2 text-gray-500">
+                    <li>Help / FAQ</li>
+                    <li>Press</li>
+                    <li>Affiliates</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h5 class="font-bold text-lg">More</h5>
+                <ul class="mt-4 space-y-2 text-gray-500">
+                    <li>Airline fees</li>
+                    <li>Airline</li>
+                    <li>Low fare tips</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <div class="flex gap-3 mb-4">
+                    <img src="Social.jpg" class="w-8 h-8" alt="">
+                    <img src="Social (1).jpg" class="w-8 h-8" alt="">
+                    <img src="Social (2).jpg" class="w-8 h-8" alt="">
+                </div>
+
+                <p class="text-gray-500 text-sm mb-4">Discover our app</p>
+
+                <div class="flex gap-4">
+                    <img src="Google Play.jpg" class="h-10" alt="">
+                    <img src="Play Store.jpg" class="h-10" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <p class="text-center mt-12 text-gray-500 text-sm md:text-base">
+            All rights reserved © jadoo.co
+        </p>
 
     </footer>
-    
+
+
 </body>
+
 </html>
